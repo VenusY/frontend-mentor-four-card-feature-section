@@ -1,0 +1,171 @@
+body {
+  height: 100vh;
+  margin: 0;
+  background: hsl(0, 0%, 98%);
+  font-family: "Poppins";
+  font-size: 15px;
+  font-weight: 400;
+  color: hsl(234, 12%, 34%);
+}
+
+.outer-container {
+  height: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  text-align: center;
+  margin: 0 0 60px 0;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  width: 290px;
+  height: 190px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px hsl(231, 18%, 86%), -5px 5px 10px hsl(231, 18%, 86%);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 5px 0 10px 0;
+}
+
+.description {
+  font-size: 13px;
+  line-height: 1.8;
+  color: hsl(229, 6%, 66%);
+}
+
+.image-container {
+  margin-top: auto;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+#supervisor {
+  background: linear-gradient(hsl(180, 62%, 55%) 5px, white 0);
+}
+
+#team-builder {
+  background: linear-gradient(hsl(0, 78%, 62%) 5px, white 0);
+  margin: 0 0 40px 0;
+}
+
+#karma {
+  background: linear-gradient(hsl(34, 97%, 64%) 5px, white 0);
+}
+
+#calculator {
+  background: linear-gradient(hsl(212, 86%, 64%) 5px, white 0);
+}
+
+#first-column, #last-column {
+  height: 250px;
+
+  justify-content: center;
+}
+
+#middle-column {
+  margin: 0 40px;
+}
+
+#heading1 {
+  height: 50px;
+  font-size: 36px;
+  font-weight: 200;
+}
+
+#heading2 {
+  height: 50px;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+#paragraph {
+  width: 540px;
+  font-size: 15px;
+  color: hsl(229, 6%, 66%);
+  line-height: 1.8;
+}
+
+@media all and (max-height: 770px) {
+  body {
+    height: auto;
+    padding: 80px 0;
+  }
+}
+
+@media all and (max-width: 1130px) {
+  body {
+    height: auto;
+    padding: 80px 0;
+  }
+
+  .cards-block {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 260px;
+    height: 180px;
+  }
+
+  #middle-column {
+    margin: 30px 0;
+  }
+
+  #team-builder {
+    margin: 0 0 30px 0;
+  }
+
+  #heading1 {
+    height: auto;
+    font-size: 25px;
+  }
+
+  #heading2 {
+    height: auto;
+    font-size: 25px;
+  }
+
+  #paragraph {
+    width: 320px;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+}
